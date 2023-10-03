@@ -80,6 +80,9 @@ for setnum = 1:10
         % Shift D to mean
         los_grid = los_grid-mean(los_grid(:));
 
+        % Shift st to mean
+        st = st-mean(st(:));
+
 
         % Zero-Mean D + Zero-Mean ST
         insarImg = los_grid + st;
